@@ -5,7 +5,7 @@
 \title{Function to extract the clinical annotations from TCGA}
 \usage{
 getTCGAClinicalAnnotation(
-  cancerCodes = "ACC",
+  cancerCodes = c("ACC"),
   outputFolder = tempdir(),
   plotdata = NULL
 )

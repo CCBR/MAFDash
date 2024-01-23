@@ -7,7 +7,8 @@
 getMAFdataTCGA(
   cancerCodes = c("ACC"),
   outputFolder = tempdir(),
-  variant_caller = "mutect2"
+  variant_caller = "mutect2",
+  legacy = FALSE
 )
 }
 \arguments{
@@ -17,6 +18,8 @@ getMAFdataTCGA(
 information in the MAF format}
 
 \item{variant_caller}{type of variant caller in TCGA}
+
+\item{legacy}{FALSE for hg38 data, TRUE for hg19}
 }
 \value{
 A vector containing the path of the downloaded mutation annotation files
@@ -27,7 +30,7 @@ This function download and extract the mutation
 }
 \examples{
 library(MAFDash)
-cancerCodes <- c("ACC","THCA")
+cancerCodes <- c("ACC")
 outputFolderPath <- tempdir()
 #maf <- getMAFdataTCGA(cancerCodes = cancerCodes,outputFolder = outputFolderPath)
 }
