@@ -70,7 +70,7 @@ MAFDash also provides a function that defines reasonable colors for some common 
 
 ```{r eval=TRUE}
 filtered_maf <- read.maf(filtered_mafdata, clinicalData = tcga_clinical$annodata,verbose = FALSE)
-annotation_colors <- getTCGAClinicalColors(ageRange = range(tcga_clinical$annodata$age_at_diagnosis, na.rm=T))
+annotation_colors <- tcga_clinical$colorList
 ```
 
 ### Make an annotated oncoplot
@@ -80,9 +80,8 @@ The `add_clinical_annotations` argument can be:
 - A character vector of column names provided as clinical data
 
 ```{r eval=TRUE}
-custom_onco <- generateOncoPlot(filtered_maf, 
-                                add_clinical_annotations = names(annotation_colors), 
-                                clin_data_colors = annotation_colors)
+custom_onco <- generateOncoPlot(filtered_maf,add_clinical_annotations = TRUE,
+                                clin_data_colors = tcga_clinical$colorList)
 custom_onco
 ```
 
