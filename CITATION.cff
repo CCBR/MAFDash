@@ -1,0 +1,31 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "MAFDash" in publications use:'
+type: software
+license: GPL-1.0-only
+title: 'MAFDash: R Package to Easily Create an HTML Dashboard to Summarize and Visualize Data from Mutation Annotation Format (MAF) File'
+abstract: Mutation Annotation Format (MAF) is a tabular data format used for storing
+  genetic mutation data. For example, The Cancer Genome Atlas (TCGA) project has made
+  MAF files from each project publicly available. This package contains a set of tools
+  to easily create an HTML dashboard to summarize and visualize data from MAF file.
+  The resulting HTML file serves as a self-contained report that can be used to explore
+  the result.
+authors:
+- family-names: Jain
+  given-names: Ashish
+  email: jain.ashishjain1@gmail.com
+- family-names: Tandon
+  given-names: Mayank
+  email: mtandon09@gmail.com
+repository-code: https://github.com/ashishjain1988/MAFDash
+url: https://github.com/ashishjain1988/MAFDash/
+identifiers:
+  - description: Archived snapshots of all versions
+    type: doi
+    value: 10.5281/zenodo.10493046
+version: 0.2.3
+date-released: 2023-02-04
