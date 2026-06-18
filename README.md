@@ -1,3 +1,8 @@
+> [!WARNING]
+> This repository has been archived and is no longer maintained.  
+> The code is provided for historical reference and may contain unpatched or unknown vulnerabilities.  
+> It should not be used in production systems.  
+
 [![Build Status](https://travis-ci.com/ashishjain1988/MAFDash.svg?branch=master)](https://app.travis-ci.com/github/ashishjain1988/MAFDash)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ashishjain1988/MAFDash)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6195233.svg)](https://doi.org/10.5281/zenodo.6195233)
